@@ -1,0 +1,526 @@
+/*
+ Theme Name:   Vmagazine News
+ Theme URI:    https://accesspressthemes.com/wordpress-themes/vmagazine-news
+ Description:  VMagazine News - a free news magazine WordPress Theme is the child theme of VMagazine Lite - a multi layout news and magazine WordPress theme. This particular theme has one elegantly designed layout that has been created specifically for newspaper websites. And so to suit the needs of newspaper websites, VMagazine news has one new widget title layout, another new widget ‘VMagazine News: Block Posts(Column)’ added. Also, the boxed/framed design of VMagazine Lite has been removed to make the theme perfect for all newspaper websites. And though additional features have been added in the theme, all the features of VMagazine Lite have been kept intact. VMagazine News has all the features of its parent theme that made VMagazine Lite so loved among its users. This child theme has one click demo import, highly configurable homepage, engaging widgets, unlimited theme colors, live ajax search and many other powerful features to help you create that perfect newspaper website. 
+ Author:       AccessPress Themes
+ Author URI:   https://accesspressthemes.com/
+ Template:     vmagazine-lite
+ Version:      1.0.4
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         right-sidebar, left-sidebar, custom-menu, featured-images, threaded-comments, translation-ready, custom-logo, custom-colors, blog, post-formats, custom-header, editor-style, news, e-commerce
+ Text Domain:  vmagazine-news
+*/
+
+body {
+    background: #fff;
+    font-family: open sans;
+}
+
+/*.template-three .block-title span.title-bg:after,
+.template-three .widget-title span.title-bg:after
+{
+    content: none;
+}*/
+h1,h2,h3,h4,h5,h6{
+    font-family: open sans;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .slider-img:before {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    margin-right: 0px;
+    content: "";
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    background: rgb(255,255,255, 1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#000000',GradientType=0 );
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .slider-img{
+    position: relative;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .post-captions{
+    z-index: 2;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .slider-img img {
+    width: 100%;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .slider-item-wrapper .slider-bigthumb{
+    padding-right: 3px; 
+}
+
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb:nth-child(3),
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb:nth-child(4){
+    padding-bottom: 0;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb {
+    padding:0 3px 3px 0 ;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb:nth-child(2n) {
+    padding-right: 0px;
+    width: 50%;
+}
+.vmagazine-lite-mul-cat-tabbed.block-post-wrapper .block-content-wrapper{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .post-captions:before{
+    content: none;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .slider-item-wrapper .slider-bigthumb .post-captions .post-meta {
+    color: rgba(255, 255, 255, 1);
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .post-captions .post-meta {
+    color: rgba(255,255,255,1);
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .slider-item-wrapper .slider-bigthumb .post-captions {   
+    bottom: 25px;
+    left: 25px;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .slider-item-wrapper .slider-bigthumb .post-captions h3.large-font{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    width: 80%;
+}
+.widget_vmagazine_lite_block_posts_column .block-post-wrapper.block_layout_4 .single-post{
+    margin-bottom: 0px;
+}
+.vmagazine-block-post-slider .block-content-wrapper .block-post-slider-wrapper .small-thumbs-wrapper .small-thumbs-inner .slider-smallthumb .post-captions h3.large-font {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.vmagazine-lite-mul-cat-tabbed .block-content-wrapper .top-post-wrapper .single-post .post-caption-wrapper p {
+    font-size: 14px;
+    color: #656565;
+    font-family: open sans;
+}
+.vmagazine-lite-mul-cat-tabbed .block-content-wrapper .btm-posts-wrapper .single-post .post-caption-wrapper h3.small-font {    
+    line-height: 20px;
+}
+.vmagazine-lite-featured-slider.featured-slider-wrapper .section-wrapper li.slide .slider-caption .post-meta{
+        color: rgba(255,255,255,1);
+}
+.vmagazine-lite-featured-slider.featured-slider-wrapper .featured-posts li.f-slide .slider-caption h3.small-font {    
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 6px;    
+}
+.post-meta span {    
+    font-size: 11px;
+    margin-bottom: 7px;
+    line-height: 1;
+    min-height: 17px;
+    font-weight: 400;    
+    font-family: open sans;
+}
+.vmagazine-lite-featured-slider.featured-slider-wrapper .featured-posts li.f-slide .slider-caption .post-content {
+    font-size: 13px;
+    color: #777;
+    font-family: open sans,arial,sans-serif;
+    margin-top: 9px;
+}
+.vmagazine-lite-rec-posts.recent-post-widget .recent-posts-content .recent-post-content a {
+    margin-top: 0.315rem;
+    color: #252525;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.vmagazine-lite-slider-tab-carousel .block-content-wrapper-carousel .post-caption h3 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.vmagazine-lite-rec-posts.recent-post-widget .recent-posts-content .recent-post-content a {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.vmagazine-lite-rec-posts.recent-post-widget .recent-posts-content .recent-post-content span a{
+        font-weight: 700;    
+}
+footer .buttom-footer.footer_one .footer-credit .site-info{    
+    font-size: 12px;
+    font-family: open sans,arial,sans-serif;
+}
+.slider-item-wrapper.slick-slide.slick-current .post-meta span{
+    color: #FFF;
+}
+img {    
+    width: 100%;
+}
+li.recentcomments {
+    padding-top: 10px;
+}
+.vmagazine-lite-timeline-post .timeline-post-wrapper .single-post .post-caption .captions-wrapper h3.small-font{
+    font-weight: 600;
+}
+header.header-layout1 nav.main-navigation .nav-wrapper .menu-mmnu-container ul li.menu-item a{
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+}
+.vmagazine-lite-ticker-wrapper .default-layout .lSSlideOuter .lSSlideWrapper{
+    height: 30px !important;
+    margin-top: 0px;
+    padding-top: 3px;
+    overflow: hidden;
+}
+.vmagazine-lite-archive-layout1 .vmagazine-lite-container #primary article .archive-wrapper h2.entry-title {
+    font-size: 21px;
+    line-height: 25px;
+}
+.entry-content p {
+    margin-top: 26px;
+    line-height: 25px;
+}
+.vmagazine-lite-container #primary .entry-content p {    
+    margin-bottom: 26px;
+    line-height: 25px;
+}
+.vmagazine-block-post-slider .block-content-wrapper{
+    padding: 0px;
+}
+a.scrollup{
+    border-radius: 0px;
+}
+.vmagazine-lite-container{
+    padding: 0px;
+}
+header.header-layout1 .logo-ad-wrapper .vmagazine-lite-container{
+        padding: 1.25rem 0px;
+}
+
+.vmagazine-lite-slider-tab-carousel .block-content-wrapper-carousel{
+    margin-left: -10px;
+    margin-right: -10px;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.vmagazine-lite-rec-posts.recent-post-widget .recent-posts-content .recent-post-content{
+    padding-top: 5px;
+}
+.vmagazine-lite-timeline-post .timeline-post-wrapper {    
+    padding: 1.25rem 0rem 1.25rem 0rem;
+}
+.widget .custom-html-widget{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.vmagazine-lite-featured-slider.featured-slider-wrapper .section-wrapper{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.vmagazine-lite-rec-posts.recent-post-widget{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.vmagazine-post-col.block-post-wrapper.block_layout_4.single-post.bottom-post {
+    padding-top: 1.25rem;
+}
+.vmagazine-post-col.block-post-wrapper.block_layout_4.single-post.first-post {
+    padding-top: 1.25rem;
+}
+.vmagazine-post-col.block-post-wrapper.block_layout_4 .content-wrapper h3.small-font {
+    color: #111111;
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 1.25rem;
+    word-break: break-word;
+    font-family: 'open sans';
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+}
+.widget_recent-posts ul {
+    list-style: none;
+    /*margin-left: 15px;*/
+}
+.widget_recent_comments li.recentcomments {
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: open sans;
+}
+.widget_recent_comments ul#recentcomments{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+.vmagazine-post-col.block-post-wrapper .single-post {
+    padding-top: 24px;
+    border-bottom: 1px solid rgba(235,235,235,0.8);
+    padding-bottom: 18px;
+}
+.vmagazine-post-col.block-post-wrapper .single-post:nth-last-child(1){    
+    border-bottom: none;
+}
+.vmagazine-post-col .single-post .post-meta {
+    font-size: .75rem;
+    font-weight: 400;
+    color: #777;
+    padding-top: 1rem;
+    font-family: open sans;
+}
+.vmagazine-post-col .single-post .post-meta span{
+    color: #777;
+}
+.lSSlideOuter .post-meta span{
+    color: #FFF;
+}
+.widget_recent-posts li {
+    padding-top: 1.25rem;
+}
+/*.template-three .widget-title:before, 
+.template-three .block-title:before{
+        top: calc(100% + 1px);
+}*/
+span.view-all{
+    font-family: open sans;
+    display: none;
+}
+.vmagazine-lite-rec-posts.recent-post-widget .recent-posts-content .recent-post-content span a {
+    font-weight: 400;
+    font-family: open sans;
+}
+.recentcomments a {      
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    font-family: open sans;
+}
+.widget_recent-posts a{    
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    font-family: open sans;
+    padding-right: 5px;
+}
+.widget_recent-posts a:hover,
+.recentcomments a:hover{
+    /*color: rgba(229,45,109,1);*/
+}
+.vmagazine-lite-container #primary .entry-header h1.entry-title{
+        line-height: 42px;
+}
+.widget_recent-posts span.post-date {
+    font-size: 13px;
+    font-family: open sans;    
+}
+.widget_vmagazine_lite_block_posts_column .block-post-wrapper.block_layout_4 .single-post .post-meta {
+    margin: 0;
+}
+.widget_vmagazine_lite_block_posts_column .block-post-wrapper.block_layout_4 .single-post h3.small-font{
+    margin-top: 0;
+}
+.widget_vmagazine_lite_block_posts_column .block-post-wrapper.block_layout_4 .single-post{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.vmagazine-lite-ticker-wrapper .default-layout .lSSlideOuter .lSSlideWrapper .lslide .single-news a, .vmagazine-lite-ticker-wrapper .default-layout .lSSlideOuter .lSSlideWrapper .lSSlide .single-news a{
+    font-size: 15px;
+    line-height: 25px;
+}
+.vmagazine-lite-featured-slider.featured-slider-wrapper .featured-posts li.f-slide:last-child{
+    padding-bottom: 0px;
+}
+.vmagazine-lite-timeline-post .timeline-post-wrapper{
+    padding-bottom: 0px;
+}
+.widget .custom-html-widget{
+    padding-top: 0px;
+}
+/* ......................................--------------------........................................ */
+.vmagazine-lite-container #primary .entry-meta span{
+    font-weight: 700;
+    color: #000;
+    font-family: open sans,arial,sans-serif;
+    font-size: 11px;
+}
+.vmagazine-lite-archive-layout1 .vmagazine-lite-container #primary article .archive-wrapper .entry-content p
+{
+    font-size: 13px;
+    color: #777;
+    font-family: open sans,arial,sans-serif;
+}
+
+/*Block Post Grid*/
+.block-post-wrapper.grid{
+    background: #FFF;
+    padding: 1.25rem;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+}
+.block-post-wrapper.grid .posts-wrap .single-post{
+    display: block;
+    border-bottom: 1px solid rgba(235,235,235,0.8);
+    padding: 1.25rem 0;
+}
+.block-post-wrapper.grid .posts-wrap .single-post:last-of-type{
+    border-bottom: none;
+    padding-bottom: 1rem;
+}
+.block-post-wrapper.grid .posts-wrap .single-post .post-thumb{
+    float: left;
+    width: 34%;
+    display: inline-block;
+}
+.block-post-wrapper.grid .posts-wrap .single-post .post-content-wrapper{
+    float: left;
+    width: 66%;
+    display: inline-block;
+    padding-left: 1.25rem;
+}
+.block-post-wrapper.grid .posts-wrap .single-post .post-content-wrapper h3.large-font{
+    font-size: 14px;
+    line-height: 1.125rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0;
+}
+.block-post-wrapper.grid .posts-wrap .single-post.first-post h3.large-font{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #252525;
+}
+.block-post-wrapper.grid .posts-wrap .single-post.first-post{
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.block-post-wrapper.grid span.view-all a{
+    min-width: 100%;
+}
+.block-post-wrapper.grid .posts-wrap .single-post.first-post .post-thumb{
+    width: 100%;
+}
+.block-post-wrapper.grid .posts-wrap .single-post.first-post .post-content-wrapper .post-meta{
+    margin-top: 1rem;
+}
+.block-post-wrapper.grid .posts-wrap .single-post .post-content-wrapper h3.large-font{
+    color: #252525;
+}
+.block-post-wrapper.grid .posts-wrap .single-post.first-post .post-content-wrapper{
+    width: 100%;
+    padding-left: 0;
+}
+
+/*Block layout 4*/
+.widget_vmagazine_block_posts_column .block-post-wrapper.block_layout_4 .single-post{
+    padding: 1.25rem;
+    background: #FFF;
+    margin-bottom: 1.25rem;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+}
+.widget_vmagazine_block_posts_column .block-post-wrapper.block_layout_4 .single-post .post-meta{
+    margin: 1rem 0 0.625rem;
+}
+.widget_vmagazine_block_posts_column .block-post-wrapper.block_layout_4 .single-post h3.small-font{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.625rem;
+    margin-bottom: 0;
+    color: #252525;
+}
+.widget_vmagazine_block_posts_column .block-post-wrapper.block_layout_4 .view-all a{
+    background: transparent;
+    color: #666;
+    border: solid 1px #999;
+    padding: 12px 12px;
+    min-width: 100%;
+}
+/*.widget_vmagazine_block_posts_column .block-post-wrapper.block_layout_4 .view-all a:hover{
+    background: rgba(229,45,109,1);
+    border-color: rgba(229,45,109,1);
+    color: #FFF;
+}*/
+.middle-footer-wrap .middle-ftr-wrap .footer-desc{
+    -webkit-flex-basis: 60%;
+            flex-basis: 60%;
+        padding: 0 50px;
+            font-family: open sans;
+    font-size: 13px;
+}
+.middle-footer-wrap .middle-ftr-wrap .footer-logo-wrap,
+ .middle-footer-wrap .middle-ftr-wrap .footer-social{
+    -webkit-flex-basis: 20%;
+            flex-basis: 20%;
+}
+footer .buttom-footer.footer_one .footer-btm-wrap .vmagazine-lite-btm-ftr .footer-nav ul li a{
+        font-weight: 100;
+}
+footer .buttom-footer.footer_one .footer-btm-wrap .vmagazine-lite-btm-ftr .footer-nav ul li a:hover{
+    font-weight: 100;
+}
+.widget_recent_comments ul#recentcomments span,
+.widget_recent-posts ul a{
+    position: relative;
+}
+.widget_recent_comments ul#recentcomments span:after,
+.widget_recent-posts ul a:after{
+    content: "\f105";
+    font-family: fontawesome;
+    position: absolute;
+    left: 0;
+    margin-left: -0.9rem;
+    top: 3px;
+    margin-top: 0px;
+    color: #111;
+}
+.template-three .block-title span {    
+    padding: 5px 15px 5px 15px;    
+}
+.vmagazine-lite-ticker-wrapper{
+    padding: 10px 0;
+}
+
+.vmagazine-lite-mobile-nav-wrapp .mob-search-icon span {
+    color: #000;
+}
+
+.vmagazine-lite-mob-outer {
+    background: #fff;
+}
+
+.vmagazine-lite-mobile-nav-wrapp .nav-toggle span {
+    background: #000;
+}
+
+.vmagazine-lite-mobile-nav-wrapp .nav-toggle span:before, .vmagazine-lite-mobile-nav-wrapp .nav-toggle span:after {
+    background: #000;
+}
+
+.vmagazine-lite-mobile-nav-wrapp .nav-toggle span:before, .vmagazine-lite-mobile-nav-wrapp .nav-toggle span:after {
+    background: #000;
+}
+
+.vmagazine-lite-mobile-navigation-wrapper .mobile-navigation .img-overlay {
+    background: rgb(255, 252, 252);
+}
+
+.vmagazine-lite-mobile-navigation-wrapper .mobile-navigation .icon-wrapper ul.social li a{
+    color: #000;
+}
+.template-three .widget-title span:after,
+.template-three .block-title span:after{
+     bottom: auto;
+     top: 0;
+ }

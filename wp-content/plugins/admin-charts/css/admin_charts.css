@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Dec, 2019, 11:21:00 AM
+    Author     : ADMIN
+*/
+
+
+#admin_chart_form {
+    margin: 30px 0;
+}
+ 
+#admin_chart_form label {
+    display: inline-block;
+    width: 250px;
+}

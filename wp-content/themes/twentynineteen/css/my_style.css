@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Nov, 2019, 1:08:42 PM
+    Author     : ADMIN
+*/
+body {
+    overflow: hidden; 
+}
+.entry .entry-content, .entry .entry-summary {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.entry .entry-content > *, .entry .entry-summary > * {
+    max-width: 100%
+}
+
+.webinar-form {
+    background-color: #f2f2f2;
+    padding: 23px;
+}
+
+.webinar-button {
+    background-color: #0585bb !important;
+    color: #FFF !important;
+    padding: 12px !important;
+}
+
+.wp-block-columns {
+    margin: 0;
+    height: calc(100vh);
+}
+.wp-block-column {
+    margin: 0;
+    flex-basis: calc(50%);
+}
+
+.wp-block-column img{
+    width: 100%;
+
+}
+.wp-block-columns .entry .entry-content > *, .entry .entry-summary > * {
+    margin: 0;
+}
+
+.first-column {
+    overflow: scroll;
+    overflow-x: scroll;
+}
+
+.second-column {
+    overflow: hidden; 
+    margin-left: 0 !important;
+}
+
+.first-column h1 {
+    font-size: 1.5em;
+}
+
+.first-column h1:not(.site-title):before, h2:before {
+    display: none;
+}
+
+.webinar-img{
+    height: fit-content;
+    overflow: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .entry .entry-content > *, .entry .entry-summary > * {
+        margin: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .wp-block-column {
+        flex-grow: 0;
+    }
+}
