@@ -98,7 +98,16 @@ do_action( 'user_registration_before_registration_form', $form_id );
 				do_action( 'user_registration_after_field_row', $row_id, $form_data_array, $form_id );
 			}
 			do_action( 'user_registration_after_form_fields', $form_data_array, $form_id );
-
+                        ?>
+                    <div class="ur-form-row">
+                        <p class="ur-form-grid">
+                            <label class="user-registration-form__label user-registration-form__label-for-checkbox inline container-label">
+                                <input class="user-registration-form__input user-registration-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" style="margin-top: 0;" /> <span><?php _e( 'Check here if you do not wish to receive further communication from us.', 'user-registration' ); ?></span>
+                                <span class="checkmark"></span>
+                            </label>
+                        </p>
+                    </div>
+                        <?php
 			if ( $is_field_exists ) {
 				?>
 					<?php
